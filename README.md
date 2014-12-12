@@ -1,6 +1,8 @@
 is-up [![Build Status](https://travis-ci.org/frozzare/is-up.svg?branch=master)](https://travis-ci.org/frozzare/is-up)
 =====
 
+> A Go version of [is-up](https://github.com/sindresorhus/is-up) that is in node.js.
+
 Check if a url is up or down.
 
 ## Installation
