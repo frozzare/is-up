@@ -14,6 +14,14 @@ type Response struct {
 	Status_code int
 }
 
+const Usage = `
+Usage of is-up:
+    $ is-up URL
+
+Example:
+    $ is-up github.com
+`
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Printf("%s %s", getColorString(9, 3, "Error:"), getColorString(9, 0, "Missing url"))
@@ -22,15 +30,19 @@ func main() {
 	}
 
 	if os.Args[1] == "--help" {
-		fmt.Println("Example:\n$ is-up github.com")
+		fmt.Println(Usage)
 		return
 	}
 
-	if isUp(os.Args[1]) {
-		fmt.Println(getColorString(9, 2, "Up"))
+	url := os.Args[1]
+
+	if isUp(url) {
+		fmt.Printf("%s %s", getColorString(9, 0, url + " is"), getColorString(9, 2, "up"))
 	} else {
-		fmt.Println(getColorString(9, 3, "Down"))
+		fmt.Printf("%s %s", getColorString(9, 0, url + " is"), getColorString(9, 3, "down"))
 	}
+
+	println()
 }
 
 // Get string with terminal color.

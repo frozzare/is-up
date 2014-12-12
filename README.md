@@ -12,5 +12,12 @@ go get -u github.com/frozzare/is-up
 ## Example
 
 ```bash
-$ is-up github.com
+$ is-up --help
+
+Usage of is-up:
+		$ is-up URL
+
+Example:
+		$ is-up github.com
+
 ```
