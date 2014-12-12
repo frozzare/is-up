@@ -1,4 +1,4 @@
-is-up
+is-up [![Build Status](https://travis-ci.org/frozzare/is-up.svg?branch=master)](https://travis-ci.org/frozzare/is-up)
 =====
 
 Check if a url is up or down.
