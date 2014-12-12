@@ -16,7 +16,7 @@ type Response struct {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Missing domain")
+		fmt.Printf("%s %s", getColorString(9, 3, "Error:"), getColorString(9, 0, "Missing url"))
 		return
 	}
 
