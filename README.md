@@ -21,3 +21,8 @@ Example:
 		$ is-up github.com
 
 ```
+
+# License
+
+Copyright (c) 2014 Fredrik Forsmo
+Licensed under the MIT license.
